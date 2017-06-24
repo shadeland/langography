@@ -10,7 +10,8 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.(js)$/, use: 'babel-loader'},
-			{ test: /\.css$/, use: [ 'style-loader', 'css-loader']}
+			{ test: /\.css$/, use: [ 'style-loader', 'css-loader']},
+			{test: /\.js$/,include: /linebreak/,loader: "transform-loader?brfs"}
 		]
 	},
 	plugins: [new HtmlWebpackPlugin({

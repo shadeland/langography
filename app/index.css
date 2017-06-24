@@ -11,6 +11,10 @@ ul {
 li{
 	list-style-type: none; 
 }
+a {
+	text-decoration: none;
+	color: #d0021b;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -25,4 +29,55 @@ li{
 	margin: 10px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.popular-list {
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+}
+.popular-rank{
+	font-size: 20px;
+	margin: 10px;
+}
+.popular-item{
+	margin: 20px;
+	text-align: center;
+
+}
+.space-list-item {
+	margin-bottom: 7px;
+}
+
+.avatar {
+	width: 150px;
+	border-radius: 50%;
+}
+.nav {
+	display: flex;
+}
+.nav li {
+	margin: 10px;
+	color : #d0021b;
+}
+.active {
+	font-weight: bold;
+}
+.d3 div {
+  	font: 10px sans-serif;
+	background-color: steelblue;
+	text-align: right;
+	padding: 3px;
+	margin: 1px;
+	color: white;
+}
+
+.d3 rect {
+  fill: steelblue;
+}
+
+.d3 text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
 }
