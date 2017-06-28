@@ -7,7 +7,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'index_bundle.js'
 	},
-	devtool: 'source-map',
+ 	devtool: 'inline-source-map',
 	module: {
 		rules: [
 			{ test: /\.(js)$/, use: 'babel-loader'},
