@@ -36,7 +36,9 @@ class WorldCloud {
 	    this.layout = layout  
 
 	}
-
+          http://www.wolframalpha.com/input/?i=plot+r+%3D+1%2F%28cos%28mod+
+          %28t%2C+2*PI%2F3%29%29%2Bsqrt%283%29sin%28mod+%28t%2C+2*PI%2F3%29
+          %29%29%2C+t+%3D+0+..+2*PI
 	/****
 	*
 	*
@@ -67,7 +69,7 @@ class WorldCloud {
 	      })
 	      .merge(u)
 	      .text(function(d) { 
-	      	console.log(d)
+	      	console.log(d.text)
 	      	return d.text; });
 
 	    this.cloud.exit().remove()
